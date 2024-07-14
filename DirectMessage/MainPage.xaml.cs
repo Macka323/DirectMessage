@@ -81,7 +81,7 @@ namespace DirectMessage
 
             try
             {
-                Uri uri = new Uri("https://www.microsoft.com");
+                Uri uri = new Uri($"https://t.me/{CountryPicker.SelectedItem.ToString().Split(' ')[0]+PhoneEntery.Text}");
                 BrowserLaunchOptions options = new BrowserLaunchOptions()
                 {
                     LaunchMode = BrowserLaunchMode.SystemPreferred,
